@@ -43,7 +43,7 @@ The fundamentals are forward-filled per metric rather than per report, because s
 
 ## Features
 
-About 80 features in five groups:
+66 engineered features in five groups (listed in `ml_data/feature_list.txt`). Together with 15 raw fundamental ratios they give 81 model inputs, and each final model keeps the 30 most important ones after feature selection.
 
 - **Technical**: returns over 1-60 days, moving average ratios, RSI, MACD, Bollinger Bands, ATR, volume, 52-week position, candlestick shape
 - **Fundamental levels**: P/E, EV/EBITDA, ROE, ROA, margins, debt ratios, plus log transforms for skewed values
