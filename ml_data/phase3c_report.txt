@@ -1,41 +1,41 @@
 ========================================================================
-FAZA 3C — BACKTEST PORTFELA Z PROWIZJAMI
-Generated: 2026-04-26 11:44:56
+PHASE 3C — PORTFOLIO BACKTEST WITH TRANSACTION COSTS
+Generated: 2026-10-20 20:06:26
 ========================================================================
 
-Parametry:
-  Kapital startowy:   10,000 PLN
-  Liczba pozycji:     5
-  Bufor rebalansu:    top 10 (trzymaj jesli w top 10)
-  Rebalans co:        20 dni handlowych
-  Prowizja DM:        max(0.39%, min 5 zl)
-  Spread bid-ask:     0.1% per strona
-  Podatek Belka:      19% od calkowitego zysku (uproszczone)
+Parameters:
+  Starting capital:   10,000 PLN
+  Positions:          5
+  Rebalance buffer:   top 10 (keep if in top 10)
+  Rebalance every:    20 trading days
+  Commission:         max(0.39%, min 5 PLN)
+  Spread bid-ask:     0.1% per side
+  Belka tax:          19% of the total gain (simplified)
 
 ────────────────────────────────────────────────────────────────────────
-POROWNIANIE STRATEGII
+STRATEGY COMPARISON
 ────────────────────────────────────────────────────────────────────────
-  Strategia               Tot ret  Ann ret  Sharpe   MaxDD  WinRate  Po Belce
+  Strategy                Tot ret  Ann ret  Sharpe   MaxDD  WinRate After tax
   ---------------------- -------- -------- ------- ------- -------- ---------
   ML Ensemble            +328.96%  +66.47%    2.05  -7.84%    69.4%   +57.55%
   Greenblatt              +68.40%  +20.01%    1.19 -12.99%    69.4%   +16.68%
   Universe EW             +80.30%  +22.91%    1.82  -7.59%    63.9%   +19.17%
 
 ────────────────────────────────────────────────────────────────────────
-KOSZTY TRANSAKCJI
+TRANSACTION COSTS
 ────────────────────────────────────────────────────────────────────────
   ML Ensemble             avg turnover=25%/period  avg cost=0.231%/period  total cost drag=8.33%
   Greenblatt              avg turnover=8%/period  avg cost=0.063%/period  total cost drag=2.25%
 
 ────────────────────────────────────────────────────────────────────────
-WARTOSC PORTFELA NA KONIEC OKRESU (start: 10 000 PLN)
+PORTFOLIO VALUE AT THE END OF THE PERIOD (start: 10,000 PLN)
 ────────────────────────────────────────────────────────────────────────
-  ML Ensemble               42,896 PLN  (zysk brutto: +32,896 PLN, po Belce: 36,646 PLN)
-  Greenblatt                16,840 PLN  (zysk brutto: +6,840 PLN, po Belce: 15,540 PLN)
-  Universe EW               18,030 PLN  (zysk brutto: +8,030 PLN, po Belce: 16,504 PLN)
+  ML Ensemble               42,896 PLN  (gross gain: +32,896 PLN, after tax: 36,646 PLN)
+  Greenblatt                16,840 PLN  (gross gain: +6,840 PLN, after tax: 15,540 PLN)
+  Universe EW               18,030 PLN  (gross gain: +8,030 PLN, after tax: 16,504 PLN)
 
 ────────────────────────────────────────────────────────────────────────
-ZWROTY PER OKNO TESTOWE (sredni top-5 per dzien x N-periodsow w oknie)
+RETURNS PER TEST WINDOW (mean top-5 per day x N periods in the window)
 ────────────────────────────────────────────────────────────────────────
  window       model  n_periods  avg_net_return  total_net_return  win_rate
       1 ML Ensemble          7        0.012074          0.081238  0.571429
@@ -52,9 +52,9 @@ ZWROTY PER OKNO TESTOWE (sredni top-5 per dzien x N-periodsow w oknie)
       6  Greenblatt          5        0.013119          0.061204  0.800000
 
 ────────────────────────────────────────────────────────────────────────
-SZCZEGOLY REBALANSOW — ML ENSEMBLE
+REBALANCE DETAILS — ML ENSEMBLE
 ────────────────────────────────────────────────────────────────────────
-          Data                               Portfel (top 5)  Buy   Gross  Cost%     Net  Value PLN
+          Date                             Portfolio (top 5)  Buy   Gross  Cost%     Net  Value PLN
   ------------ --------------------------------------------- ---- ------- ------ ------- ----------
     2023-05-08 AILLERON, BIOCELTIX, GREENX, MOSTALZAB, ZREMB    5 +2.616% 0.490% +2.126%     10,213
     2023-06-05 AILLERON, BIOCELTIX, GREENX, MOSTALZAB, ZREMB    0 +8.355% 0.000% +8.355%     11,066
