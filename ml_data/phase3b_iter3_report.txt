@@ -1,0 +1,30 @@
+Krok 3B Iteracja 3 - LambdaRank v2 (min_leaf=30, bins=5)
+Generated: 2026-04-26 11:09:54.608121
+======================================================================
+
+Zmiany vs Iter 2:
+  min_data_in_leaf: 300 -> 30
+  NUM_RELEVANCE_BINS: 32 -> 5
+  NUM_BOOST_ROUND: 500 -> 2000
+
+Per-window results:
+ window  train_end test_start   test_end  n_train  n_val  n_test  best_iter  model_ic_excess_mean  model_ic_raw_mean  model_top5_return  model_top5_winrate  model_top5_alpha  greenblatt_ic_mean  greenblatt_top5_return  greenblatt_top5_alpha  universe_mean_return  model_wins_ic  model_wins_topn  model_wins_both
+      1 2023-03-31 2023-05-08 2023-10-31    45604   7287   14443          1              0.022413           0.059506           0.028504            0.720000          0.018877            0.070072               -0.007992              -0.017618              0.009626          False             True            False
+      2 2023-09-30 2023-11-06 2024-04-30    60049   7269   14876          3             -0.014036           0.013478           0.016479            0.631148         -0.008313            0.104688                0.075545               0.050753              0.024792          False            False            False
+      3 2024-03-31 2024-05-08 2024-10-31    74610   7716   15104          7             -0.024528          -0.010262           0.008063            0.672000          0.017740            0.073201               -0.013417              -0.003739             -0.009677          False             True            False
+      4 2024-09-30 2024-11-06 2025-04-30    90035   7631   14788          2              0.048975           0.039380           0.066997            0.760684          0.029868            0.055436                0.037523               0.000394              0.037129          False             True            False
+      5 2025-03-31 2025-05-08 2025-10-31   104858   7966   16158          2              0.037549           0.038860           0.020482            0.584000          0.013185            0.069703                0.007431               0.000134              0.007297          False             True            False
+      6 2025-09-30 2025-11-06 2026-03-24   120859   8226   12209          2              0.075036           0.079397           0.123466            0.913043          0.104073            0.100639                0.102785               0.083391              0.019394          False             True            False
+
+
+Mean across windows:
+  Model IC raw:     +0.0367
+  Greenblatt IC:    +0.0790
+  Wins both:        0/6
+
+
+Comparison vs previous iterations:
+  Iter 0: IC=+0.0687, wins=3/6, top-5=+0.0176
+  Iter 1: IC=+0.0515, wins=1/6, top-5=+0.0463
+  Iter 2: IC=+0.0266, wins=1/6, top-5=+0.0241
+  Iter 3: IC=+0.0367, wins=0/6, top-5=+0.0440

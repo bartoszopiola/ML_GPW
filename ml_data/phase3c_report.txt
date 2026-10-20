@@ -1,0 +1,96 @@
+========================================================================
+FAZA 3C — BACKTEST PORTFELA Z PROWIZJAMI
+Generated: 2026-04-26 11:44:56
+========================================================================
+
+Parametry:
+  Kapital startowy:   10,000 PLN
+  Liczba pozycji:     5
+  Bufor rebalansu:    top 10 (trzymaj jesli w top 10)
+  Rebalans co:        20 dni handlowych
+  Prowizja DM:        max(0.39%, min 5 zl)
+  Spread bid-ask:     0.1% per strona
+  Podatek Belka:      19% od calkowitego zysku (uproszczone)
+
+────────────────────────────────────────────────────────────────────────
+POROWNIANIE STRATEGII
+────────────────────────────────────────────────────────────────────────
+  Strategia               Tot ret  Ann ret  Sharpe   MaxDD  WinRate  Po Belce
+  ---------------------- -------- -------- ------- ------- -------- ---------
+  ML Ensemble            +328.96%  +66.47%    2.05  -7.84%    69.4%   +57.55%
+  Greenblatt              +68.40%  +20.01%    1.19 -12.99%    69.4%   +16.68%
+  Universe EW             +80.30%  +22.91%    1.82  -7.59%    63.9%   +19.17%
+
+────────────────────────────────────────────────────────────────────────
+KOSZTY TRANSAKCJI
+────────────────────────────────────────────────────────────────────────
+  ML Ensemble             avg turnover=25%/period  avg cost=0.231%/period  total cost drag=8.33%
+  Greenblatt              avg turnover=8%/period  avg cost=0.063%/period  total cost drag=2.25%
+
+────────────────────────────────────────────────────────────────────────
+WARTOSC PORTFELA NA KONIEC OKRESU (start: 10 000 PLN)
+────────────────────────────────────────────────────────────────────────
+  ML Ensemble               42,896 PLN  (zysk brutto: +32,896 PLN, po Belce: 36,646 PLN)
+  Greenblatt                16,840 PLN  (zysk brutto: +6,840 PLN, po Belce: 15,540 PLN)
+  Universe EW               18,030 PLN  (zysk brutto: +8,030 PLN, po Belce: 16,504 PLN)
+
+────────────────────────────────────────────────────────────────────────
+ZWROTY PER OKNO TESTOWE (sredni top-5 per dzien x N-periodsow w oknie)
+────────────────────────────────────────────────────────────────────────
+ window       model  n_periods  avg_net_return  total_net_return  win_rate
+      1 ML Ensemble          7        0.012074          0.081238  0.571429
+      2 ML Ensemble          6        0.035159          0.224467  0.833333
+      3 ML Ensemble          6        0.004601          0.020150  0.333333
+      4 ML Ensemble          6        0.062395          0.408829  0.666667
+      5 ML Ensemble          6        0.035130          0.225303  0.833333
+      6 ML Ensemble          5        0.134441          0.839857  1.000000
+      1  Greenblatt          7       -0.007844         -0.057582  0.571429
+      2  Greenblatt          6        0.051098          0.344585  0.833333
+      3  Greenblatt          6       -0.022391         -0.129911  0.333333
+      4  Greenblatt          6        0.055327          0.373609  1.000000
+      5  Greenblatt          6        0.008136          0.047787  0.666667
+      6  Greenblatt          5        0.013119          0.061204  0.800000
+
+────────────────────────────────────────────────────────────────────────
+SZCZEGOLY REBALANSOW — ML ENSEMBLE
+────────────────────────────────────────────────────────────────────────
+          Data                               Portfel (top 5)  Buy   Gross  Cost%     Net  Value PLN
+  ------------ --------------------------------------------- ---- ------- ------ ------- ----------
+    2023-05-08 AILLERON, BIOCELTIX, GREENX, MOSTALZAB, ZREMB    5 +2.616% 0.490% +2.126%     10,213
+    2023-06-05 AILLERON, BIOCELTIX, GREENX, MOSTALZAB, ZREMB    0 +8.355% 0.000% +8.355%     11,066
+    2023-07-04 AILLERON, BIOCELTIX, GREENX, MOSTALZAB, ZREMB    0 -1.078% 0.000% -1.078%     10,947
+    2023-08-01 AILLERON, BIOCELTIX, GREENX, MOSTALZAB, ZREMB    0 -4.125% 0.000% -4.125%     10,495
+    2023-08-30 AILLERON, BIOCELTIX, GREENX, MABION, MOSTALZA    1 -2.436% 0.196% -2.632%     10,219
+    2023-09-27 AILLERON, BIOCELTIX, GREENX, MABION, MOSTALZA    0 +5.751% 0.000% +5.751%     10,807
+    2023-10-25 AILLERON, BIOCELTIX, GREENX, MABION, MOSTALZA    0 +0.054% 0.000% +0.054%     10,812
+    2023-11-27 AILLERON, BIOCELTIX, GREENX, MABION, MOSTALZA    0 +9.499% 0.000% +9.499%     11,839
+    2023-12-27    AILLERON, ALIOR, GREENX, MABION, MOSTALZAB    1 -2.141% 0.196% -2.337%     11,563
+    2024-01-25    AILLERON, ALIOR, GREENX, MABION, MOSTALZAB    0 +6.912% 0.000% +6.912%     12,362
+    2024-02-22    ALIOR, GREENX, MABION, MOSTALZAB, WITTCHEN    1 +0.337% 0.196% +0.141%     12,380
+    2024-03-21    ALIOR, GREENX, MABION, MOSTALZAB, WITTCHEN    0 +1.158% 0.000% +1.158%     12,523
+    2024-04-22 DATAWALK, GREENX, MABION, MOSTALZAB, WITTCHEN    1 +5.918% 0.196% +5.722%     13,239
+    2024-05-27    AILLERON, GREENX, MABION, MOSTALZAB, ZREMB    2 -0.512% 0.392% -0.904%     13,120
+    2024-06-25    AILLERON, GREENX, MABION, MOSTALZAB, ZREMB    0 -2.578% 0.000% -2.578%     12,781
+    2024-07-23   BIOCELTIX, ELEKTROTI, GREENX, MABION, ZREMB    2 +6.917% 0.392% +6.525%     13,615
+    2024-08-21 AILLERON, DIGITANET, ELEKTROTI, GREENX, MABIO    2 -2.178% 0.392% -2.570%     13,266
+    2024-09-18   AILLERON, DADELO, ELEKTROTI, GREENX, MABION    1 +8.319% 0.196% +8.123%     14,343
+    2024-10-16 AILLERON, CREEPYJAR, CREOTECH, MABION, RAINBO    3 -5.247% 0.588% -5.835%     13,506
+    2024-11-19 AILLERON, CIGAMES, CREEPYJAR, DIGITANET, MABI    2 -1.738% 0.392% -2.130%     13,218
+    2024-12-17    AILLERON, CIGAMES, DATAWALK, UNIBEP, ZREMB    3 +23.952% 0.588% +23.364%     16,307
+    2025-01-22    AILLERON, CAPTORTX, CIGAMES, UNIBEP, ZREMB    1 +3.714% 0.196% +3.518%     16,881
+    2025-02-19    AILLERON, CAPTORTX, CIGAMES, UNIBEP, ZREMB    0 +7.024% 0.000% +7.024%     18,066
+    2025-03-19    AILLERON, CAPTORTX, CIGAMES, UNIBEP, ZREMB    0 -3.637% 0.000% -3.637%     17,409
+    2025-04-16    AILLERON, CAPTORTX, CIGAMES, UNIBEP, ZREMB    0 +9.297% 0.000% +9.297%     19,028
+    2025-05-23    AILLERON, DATAWALK, MURAPOL, UNIBEP, ZREMB    2 +2.985% 0.392% +2.593%     19,521
+    2025-06-23         AILLERON, DADELO, DINOPL, TOYA, ZREMB    3 +7.536% 0.588% +6.948%     20,877
+    2025-07-21     AILLERON, ANSWEAR, AUTOPARTN, TOYA, ZREMB    2 +0.477% 0.392% +0.085%     20,895
+    2025-08-19     AILLERON, ANSWEAR, AUTOPARTN, TOYA, ZREMB    0 +8.217% 0.000% +8.217%     22,612
+    2025-09-16     AILLERON, ANSWEAR, AUTOPARTN, TOYA, ZREMB    0 -2.310% 0.000% -2.310%     22,090
+    2025-10-14    AILLERON, ANSWEAR, CAPTORTX, UNIBEP, ZREMB    2 +5.938% 0.392% +5.546%     23,315
+    2025-11-17 11BIT, AILLERON, CAPTORTX, CREEPYJAR, MEDINIC    3 +16.073% 0.588% +15.485%     26,925
+    2025-12-15 AILLERON, CREEPYJAR, MEDINICE, MERCATOR, PEKA    2 +27.872% 0.392% +27.480%     34,325
+    2026-01-20  AILLERON, ANSWEAR, MEDINICE, MERCATOR, ZREMB    2 +21.284% 0.392% +20.892%     41,495
+    2026-02-17  AILLERON, AMBRA, MERCATOR, MURAPOL, WITTCHEN    3 +1.007% 0.588% +0.419%     41,670
+    2026-03-17 AILLERON, ANSWEAR, MERCATOR, MURAPOL, WITTCHE    1 +3.140% 0.196% +2.944%     42,896
+
+========================================================================

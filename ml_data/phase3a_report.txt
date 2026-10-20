@@ -1,0 +1,78 @@
+Krok 3A - Baseline LightGBM Report
+Generated: 2026-04-25 18:58:43.786342
+======================================================================
+
+DATASET:
+  Train: 97,666 rows
+  Val:   15,260 rows
+  Test:  26,304 rows
+  Features: 81
+
+MODEL:
+  Best iteration: 33
+  Hyperparams: {
+    "objective": "regression",
+    "metric": "rmse",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.03,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "min_data_in_leaf": 100,
+    "feature_fraction": 0.85,
+    "bagging_fraction": 0.85,
+    "bagging_freq": 5,
+    "lambda_l1": 0.1,
+    "lambda_l2": 0.1,
+    "verbose": -1,
+    "force_col_wise": true,
+    "seed": 42
+}
+
+INFORMATION COEFFICIENT:
+  VAL:    mean=+0.0964  std=0.0937  IR=+1.029
+  TEST:   mean=+0.0295  std=0.1231  IR=+0.239
+
+TOP-N PORTFOLIO (TEST):
+  Universe avg: +0.0143
+  Top-3: mean=+0.0195  alpha=+0.0052  win_rate=57.7%
+  Top-5: mean=+0.0231  alpha=+0.0088  win_rate=63.7%
+  Top-10: mean=+0.0129  alpha=-0.0014  win_rate=64.7%
+
+NAIVE BASELINES (TEST, top-5):
+  random                     ret=+0.0122  alpha=-0.0021  IC=+0.0002
+  top_by_roe                 ret=+0.0267  alpha=+0.0125  IC=+0.0458
+  top_by_momentum_60d        ret=+0.0476  alpha=+0.0333  IC=+0.0400
+  top_by_low_pe              ret=+0.0534  alpha=+0.0392  IC=+0.0886
+  greenblatt                 ret=+0.0546  alpha=+0.0403  IC=+0.0896
+
+TOP 30 FEATURES BY GAIN:
+  log_market_cap                    4.6%  splits=49
+  ev_ebitda                         4.5%  splits=37
+  sps_yoy                           4.1%  splits=37
+  roa_yoy                           3.9%  splits=20
+  pe                                3.7%  splits=38
+  roe_yoy                           3.5%  splits=30
+  eps_yoy                           3.2%  splits=29
+  debt_to_equity_yoy                3.2%  splits=32
+  ret_60d                           2.9%  splits=32
+  rank_pe                           2.8%  splits=29
+  ev_sales                          2.8%  splits=27
+  pe_qoq                            2.8%  splits=30
+  margin_net_qoq                    2.7%  splits=21
+  roe_qoq                           2.6%  splits=28
+  debt_to_equity                    2.6%  splits=23
+  rank_market_cap                   2.6%  splits=26
+  rank_market_cap_branza            2.5%  splits=24
+  margin_op_yoy                     2.3%  splits=26
+  log_net_fin_debt                  2.2%  splits=22
+  month                             2.2%  splits=22
+  quick_ratio                       2.1%  splits=22
+  rank_ev_ebitda                    2.0%  splits=18
+  pos_52w                           1.9%  splits=21
+  eps_qoq                           1.9%  splits=24
+  shares_yoy                        1.9%  splits=18
+  margin_net_yoy                    1.8%  splits=18
+  roa                               1.8%  splits=18
+  bvps                              1.7%  splits=17
+  ma20_ma50_ratio                   1.6%  splits=16
+  pbv                               1.5%  splits=17

@@ -1,0 +1,10 @@
+pandas
+numpy
+scipy
+lightgbm
+matplotlib
+yfinance
+requests
+beautifulsoup4
+tqdm
+pyarrow

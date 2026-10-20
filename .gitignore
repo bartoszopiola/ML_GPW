@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.idea/
+_backup_pl/
+PROJECT_HANDOFF.md
+ml_data/br_cache/
+ml_data/ohlcv_cache/
+ml_data/dataset_*.parquet
+ml_data/predictions_today.*

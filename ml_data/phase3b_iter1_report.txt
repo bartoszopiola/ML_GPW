@@ -1,0 +1,40 @@
+Krok 3B Iteracja 1 - Sector-Neutral Excess Return Target
+Generated: 2026-04-25 23:29:34.460342
+======================================================================
+
+Per-window results:
+ window  train_end test_start   test_end  n_train  n_val  n_test  best_iter  model_ic_excess_mean  model_ic_raw_mean  model_ic_raw_std  model_ic_raw_ir  model_top5_return  model_top5_winrate  model_top5_alpha  greenblatt_ic_mean  greenblatt_top5_return  greenblatt_top5_alpha  universe_mean_return  model_wins_ic  model_wins_topn  model_wins_both
+      1 2023-03-31 2023-05-08 2023-10-31    45604   7287   14443         50              0.017184           0.016714          0.121674         0.137365           0.031289            0.696000          0.021662            0.070072               -0.007992              -0.017618              0.009626          False             True            False
+      2 2023-09-30 2023-11-06 2024-04-30    60049   7269   14876         19              0.068979           0.089159          0.093371         0.954890           0.060223            0.877049          0.035431            0.104688                0.073515               0.048724              0.024792          False            False            False
+      3 2024-03-31 2024-05-08 2024-10-31    74610   7716   15104         59              0.063047           0.059346          0.087741         0.676384           0.003343            0.448000          0.013020            0.073201               -0.013417              -0.003739             -0.009677          False             True            False
+      4 2024-09-30 2024-11-06 2025-04-30    90035   7631   14788         66              0.059886           0.089640          0.110020         0.814759           0.050058            0.760684          0.012929            0.055436                0.037523               0.000394              0.037129           True             True             True
+      5 2025-03-31 2025-05-08 2025-10-31   104858   7966   16158          4             -0.022963          -0.005447          0.084911        -0.064146           0.004101            0.512000         -0.003196            0.069703                0.007431               0.000134              0.007297          False            False            False
+      6 2025-09-30 2025-11-06 2026-03-24   120859   8226   12209         18              0.059219           0.059775          0.126649         0.471971           0.128952            0.717391          0.109558            0.100639                0.102785               0.083391              0.019394          False             True            False
+
+
+Mean across windows:
+  Model IC raw:     +0.0515
+  Greenblatt IC:    +0.0790
+  Wins both:        1/6
+
+
+Comparison vs Iter 0:
+  Iter 0: IC=+0.0687, wins=3/6
+  Iter 1: IC=+0.0515, wins=1/6
+
+Top-15 features:
+  ev_ebitda                        6.14%  (6/6)
+  rank_market_cap_branza           5.84%  (6/6)
+  roa_yoy                          5.71%  (6/6)
+  log_market_cap                   5.64%  (6/6)
+  eps_yoy                          5.05%  (6/6)
+  roe_yoy                          4.96%  (5/6)
+  roa                              4.95%  (3/6)
+  margin_net_qoq                   4.50%  (6/6)
+  pe_qoq                           4.31%  (6/6)
+  roe_qoq                          3.94%  (6/6)
+  debt_to_equity                   3.94%  (5/6)
+  margin_net_yoy                   3.67%  (6/6)
+  margin_op_yoy                    3.50%  (4/6)
+  shares_yoy                       3.39%  (2/6)
+  rank_market_cap                  3.39%  (4/6)
