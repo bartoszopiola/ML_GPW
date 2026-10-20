@@ -1,4 +1,4 @@
-# Lista featurów (66)
+# Feature list (66)
 # Generated: 2026-04-24
 
 ret_1d
